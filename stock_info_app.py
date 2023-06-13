@@ -1,16 +1,22 @@
 import streamlit as st
 
 # 애플리케이션 제목
-st.title("경과대 201821018 음두령")
+st.title("경기과학기술대학교 메카과")
 
 # 페이지 제목
-st.header("제어공학 기물고사 2번 문제")
+st.header("201821018 음두령")
 
-# 날짜 선택
-date = st.date_input("날짜 선택")
+# 페이지 제목
+st.header("제어공학 기말고사 2번")
 
-# 시간 선택
-time = st.time_input("시간 선택")
+# 사이드바
+st.sidebar.header("안녕하세요")
+
+# 사이드바 날짜 선택
+sidebar_date = st.sidebar.date_input("날짜")
+
+# 사이드바 시간 선택
+sidebar_time = st.sidebar.time_input("시간")
 
 # 페이지 소제목
 st.subheader("전달 함수")
